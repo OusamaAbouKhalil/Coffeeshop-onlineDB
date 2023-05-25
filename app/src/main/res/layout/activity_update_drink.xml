@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDrink"
+    android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/spnAllDrinksSpinner"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/product_name"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductName"
+        android:textSize="16dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/product_price"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductprice"
+        android:textSize="16dp"
+        android:inputType="numberDecimal"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/spnProductCategory"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:hint="@string/product_description"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductDescription"
+        android:textSize="16dp"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnUpdateImage"
+            android:textSize="16dp"
+            android:text="Update Image"
+            android:onClick="UpdateImage"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnUpdateDrink"
+            android:textSize="16dp"
+            android:text="@string/save"
+            android:onClick="UpdateDrink"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/btnRemoveDrink"
+            android:textSize="16dp"
+            android:text="Remove"
+            android:onClick="RemoveDrink"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

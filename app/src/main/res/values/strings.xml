@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Coffee shop - online DB</string>
+    <string name="add_a_new_drink">Add a new drink</string>
+    <string name="product_name">Product name</string>
+    <string name="product_price">Product price</string>
+    <string name="product_description">Product description</string>
+    <string name="save">Save</string>
+    <string name="modify_a_drink">Modify a drink</string>
+</resources>

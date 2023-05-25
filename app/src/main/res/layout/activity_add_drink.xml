@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDrink"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Product name"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductName"
+        android:textSize="16dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Product price"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductprice"
+        android:textSize="16dp"
+        android:inputType="numberDecimal"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/spnProductCategory"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:hint="Product description"
+        android:layout_margin="10dp"
+        android:id="@+id/edtProductDescription"
+        android:textSize="16dp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/btnAddProduct"
+        android:textSize="16dp"
+        android:text="Save"
+        android:onClick="InsertNewDrink"
+        />
+
+</LinearLayout>
